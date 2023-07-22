@@ -1,0 +1,31 @@
+{
+  "name": "reflare-template",
+  "version": "1.0.0",
+  "description": "🚀 The template to kickstart Reflare",
+  "main": "dist/worker.js",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "dev": "miniflare",
+    "deploy": "wrangler publish",
+    "lint": "eslint . --fix --ext .ts"
+  },
+  "author": "Xiaoyang Liu <siujoeng.lau@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230518.0",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "eslint": "^8.44.0",
+    "miniflare": "^2.13.0",
+    "ts-loader": "^9.4.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "reflare": "git+https://github.com/rokibhasansagar/reflare.git#master"
+  }
+}
